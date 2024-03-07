@@ -5,17 +5,30 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "start": "node --loader ts-node/esm ./src/app.ts"
+    "start": "node --loader ts-node/esm ./src/app.ts",
+    "test": "cross-env NODE_OPTIONS='--experimental-vm-modules' NODE_NO_WARNINGS=1 jest ./*.test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "date-fn": "^0.0.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
     "express": "^4.18.2",
-    "ts-node": "^10.9.2"
+    "postgres": "^3.4.3",
+    "slugify": "^1.6.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
     "nodemon": "^3.0.3"
   }
 }

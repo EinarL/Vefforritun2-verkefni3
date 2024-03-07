@@ -8,6 +8,6 @@
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["**/*.ts", "src/lib/teams.test.js"],
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }
